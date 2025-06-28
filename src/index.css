@@ -1,0 +1,143 @@
+:root {
+
+  --mandarina: #FF8201;
+
+
+  font-family: "Kufam", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #F3F3FD;
+  position: relative;
+  overflow: hidden;
+}
+body::before {
+  content: '';
+  position: fixed;
+  width: 120vmax;
+  height: 120vmax;
+  background: radial-gradient(
+    circle at 20% 70%, 
+    rgba(68, 97, 242, 0.4) 0%, 
+    rgba(68, 97, 242, 0) 50%
+  );
+  filter: blur(100px);
+  top: -30%;
+  left: -20%;
+  z-index: -2; /* Capa detrás del contenido */
+}
+/* Efectos de difuminado y formas */
+body::after {
+  content: '';
+  position: fixed;
+  width: 150vmax;
+  height: 150vmax;
+  background: radial-gradient(
+    circle at 20% 70%, 
+    rgba(68, 97, 242, 0.4) 0%, 
+    rgba(68, 97, 242, 0) 50%
+  );
+  filter: blur(100px);
+  top: -30%;
+  left: -20%;
+}
+body::before {
+  content: '';
+  position: fixed;
+  width: 120vmax;
+  height: 120vmax;
+  background: radial-gradient(
+    circle at 8% 30%, 
+    rgba(68, 117, 242, 0.3) 0%, 
+    rgba(68, 117, 242, 0) 50%
+  );
+  filter: blur(120px);
+  right: -25%;
+  bottom: -40%;
+}
+/* Formas adicionales para detalles */
+.background-detail {
+  position: fixed;
+  width: 50vmin;
+  height: 50vmin;
+  background: rgba(111, 108, 144, 0.1);
+  filter: blur(80px);
+  border-radius: 50%;
+}
+
+/* Contenedor principal */
+.app-container {
+  position: relative; /* Establece nuevo contexto de apilamiento */
+  z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-detail:nth-child(1) {
+  top: 20%;
+  left: 15%;
+}
+
+.background-detail:nth-child(2) {
+  bottom: 30%;
+  right: 10%;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

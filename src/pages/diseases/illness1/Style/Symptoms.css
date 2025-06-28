@@ -1,0 +1,223 @@
+.symptoms-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.symptoms-header h1 {
+  margin-left: -10rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2d3436;
+  margin-bottom: 2rem;
+  margin-right: -7rem;
+}
+
+.symptoms-content {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center; /* CENTRAR el contenido en fila */
+  text-align: center;
+}
+
+.symptom-left {
+  margin-left: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* CENTRAR el canvas dentro de la izquierda */
+  align-items: center;
+  margin-top: 10rem;
+  margin-right: -60rem;
+}
+
+.symptom-right {
+  flex: 1;
+}
+
+.symptom-right p {
+  margin: 0; /* eliminar márgenes negativos */
+  padding: 0;
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-left: -7rem; /* o center si quieres */
+}
+
+.types-img {
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem 0;
+}
+
+/* .symptom-right ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+} */
+
+.next-button {
+  position: fixed;
+  top: 20px;
+  right: 100px; /* para flecha de "siguiente" derecha */
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  display: flex;
+  margin-top: 29.7rem;
+  margin-right: 15rem;
+}
+
+.next-button img {
+  width: 35px;
+  height: auto;
+}
+
+.return-button-container {
+  position: fixed;
+  top: 20px;
+  left: 20px; /* para flecha de "regresar" izquierda */
+  z-index: 1000;
+}
+
+.back-arrow {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+
+.symptoms-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+.migraine-model-canvas {
+  width: 100%;
+  max-width: 500px;   /* antes 400px */
+  height: 500px;      /* antes 400px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -5rem;
+  margin-top: 2rem; /* antes 10rem, por ejemplo */
+}
+
+/* Ajuste para los modelos 3D de Esclerosis */
+.esclerosis-model-canvas {
+  margin: 0 auto; /* Centra el canvas horizontalmente */
+  width: 100%; /* Usa el 100% del ancho disponible */
+  max-width: 550px; /* Aumenta el tamaño máximo del modelo */
+  height: 545px; /* Aumenta la altura del modelo */
+  align-items: top;
+  margin-right: 14rem; /* Elimina el margen derecho */
+  margin-top: -4.5rem;
+}
+
+/* Ajuste para el segundo modelo de Esclerosis */
+.esclerosis-model2-canvas {
+  margin: 0 auto; /* Centra el canvas horizontalmente */
+  width: 100%; /* Usa el 100% del ancho disponible */
+  max-width: 600px; /* Aumenta el tamaño máximo del modelo */
+  height: 500px; /* Aumenta la altura del modelo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0; /* Elimina el margen derecho */
+}
+
+/* Symptoms.css */
+.acv-model-canvas {
+  margin: 0 auto; /* Centra el canvas horizontalmente */
+  width: 100%;
+  max-width: 400px; /* Puedes ajustar el tamaño máximo del modelo */
+  height: 500px; /* Ajusta la altura del canvas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18rem; /* Espacio opcional a la derecha */
+}
+
+/* Ajuste para que los modelos 3D de Alzheimer sean más grandes */
+.alzheimer-model-canvas {
+  margin: 0 auto; /* Centra el canvas horizontalmente */
+  width: 100%;
+  max-width: 400px; /* Tamaño máximo del modelo más grande */
+  height: 400px; /* Mayor altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18rem; /* Espacio opcional a la derecha */
+}
+
+.instruction-text {
+  margin-left: -50rem;
+  margin-top: -20rem;
+  font-size: 0.8rem; /* Tamaño más grande para mejorar la legibilidad */
+  color: #444;
+  padding: 1rem; /* Un poco de relleno alrededor del texto */
+  text-align: center;
+}
+
+/* -------- AQUÍ FUE ELIMINADO EL BLOQUE DE .pausa-button ---------- */
+
+.return-button-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: -30rem;
+  margin-left: 18rem;
+  margin-top: 30.33rem;
+}
+
+.return-button {
+  background-color: #445ef2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #324dd3;
+}
+
+/* Ubica el icono de info junto al modelo, en el círculo rojo */
+.info-icon {
+  position: fixed;
+  left: 30%;        /* Ajusta este valor hasta que quede en el punto exacto */
+  top: 45%;         /* Ajusta este valor también */
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Tooltip apareciendo encima del icono */
+.tooltip {
+  position: fixed;
+  left: 30%;        /* Mismo left que el icono */
+  top: 45%;         /* Mismo top que el icono */
+  transform: translate(-110%, -50%); /* Desplaza el tooltip a la izquierda y centrándolo verticalmente */
+  width: 240px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  color: #444;
+  font-size: 0.85rem;
+  z-index: 1000;
+  text-align: left;
+}
+
